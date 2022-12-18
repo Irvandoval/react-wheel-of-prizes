@@ -116,7 +116,7 @@ const WheelComponent = ({
 
   const drawSegment = (key, lastAngle, angle) => {
     const ctx = canvasContext
-    const value = segments[key]
+    const value = segments[key].label;
     ctx.save()
     ctx.beginPath()
     ctx.moveTo(centerX, centerY)
